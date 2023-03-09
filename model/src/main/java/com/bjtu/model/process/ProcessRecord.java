@@ -6,17 +6,12 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 
-import java.io.Serial;
-
-@EqualsAndHashCode(callSuper = true)
 @Data
 @ApiModel(description = "ProcessRecord")
 @TableName("oa_process_record")
 public class ProcessRecord extends BaseEntity {
 
-	@Serial
 	private static final long serialVersionUID = 1L;
 
 	@ApiModelProperty(value = "审批流程id")

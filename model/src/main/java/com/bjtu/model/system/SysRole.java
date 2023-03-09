@@ -7,6 +7,8 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
+import javax.validation.constraints.NotBlank;
+
 
 @Data
 @ApiModel(description = "角色")
@@ -15,7 +17,7 @@ public class SysRole extends BaseEntity {
 	
 	private static final long serialVersionUID = 1L;
 
-	//@NotBlank(message = "角色名称不能为空")
+	@NotBlank(message = "角色名称不能为空")
 	@ApiModelProperty(value = "角色名称")
 	@TableField("role_name")
 	private String roleName;

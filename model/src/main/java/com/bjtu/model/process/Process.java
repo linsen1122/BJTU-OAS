@@ -8,15 +8,12 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-import java.io.Serial;
 
-@EqualsAndHashCode(callSuper = true)
 @Data
 @ApiModel(description = "Process")
 @TableName("oa_process")
 public class Process extends BaseEntity {
 
-	@Serial
 	private static final long serialVersionUID = 1L;
 
 	@ApiModelProperty(value = "审批code")
